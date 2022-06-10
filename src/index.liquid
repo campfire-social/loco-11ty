@@ -6,10 +6,8 @@ layout: layouts/base.liquid
 <section>
   <div>
     <div>
-      <picture>
-        <source media="(max-width: 752px)" sizes="100vw" srcset="https://via.placeholder.com/390x858">
-        <img src="https://via.placeholder.com/1440x720" alt="Placeholder">
-      </picture>
+      {% image "./src/images/griddle-001.jpg", "photo of my cat", "(max-width: 752px), 100vw" %}
+      
     </div>
     <div>
       <h1>
