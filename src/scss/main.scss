@@ -29,9 +29,12 @@
 
 // 05. Objects 
 @import '05-objects/objects.container';
+@import '05-objects/objects.flex-embed';
+@import '05-objects/objects.prose';
 
 // 06. Components 
 @import '06-components/components.button';
+@import '06-components/components.lead';
 
 // 99. Utilities
 @import '99-utilities/utilities.clearfix';

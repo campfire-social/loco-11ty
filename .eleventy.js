@@ -1,24 +1,25 @@
 const Image = require("@11ty/eleventy-img");
 
-async function imageShortcode(src, alt, sizes) {
-  let metadata = await Image(src, {
-    widths: [300, 600],
-    formats: ["webp", "jpg", "png"],
-    outputDir: "./src/assets/images",
-    urlPath: "/assets/images/"
-
-  });
-
-  let imageAttributes = {
-    alt,
-    sizes,
-    loading: "lazy",
-    decoding: "async",
-  };
-
-  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
-  return Image.generateHTML(metadata, imageAttributes);
-}
+function imageShortcode(src, cls, alt, sizes, widths) {
+    let options = {
+      widths: widths,
+      formats: ['jpeg', 'webp'],
+    };
+  
+    // generate images, while this is async we don’t wait
+    Image(src, options);
+  
+    let imageAttributes = {
+      class: cls,
+      alt,
+      sizes,
+      loading: "lazy",
+      decoding: "async",
+    };
+    // get metadata even the images are not fully generated
+    let metadata = Image.statsSync(src, options);
+    return Image.generateHTML(metadata, imageAttributes);
+  }
 
 module.exports = function (config) {
 

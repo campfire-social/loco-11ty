@@ -3,19 +3,21 @@ layout: layouts/base.liquid
 ---
 
 {% comment %} Hero Section : BEGIN {% endcomment %}
-<section>
-  <div>
-    <div>
-      {% image "./src/images/griddle-001.jpg", "photo of my cat", "(max-width: 752px), 100vw" %}
-      
+<section class="c-lead">
+  <div class="c-lead__content">
+    <div class="o-flexEmbed">
+      <div class="o-flexEmbed__ratio o-flexEmbed__ratio--hero"></div>
+      <img  class="o-flexEmbed__content" src="/assets/images/griddle-001.jpg" alt="placeholder" />
     </div>
-    <div>
-      <h1>
-        <span>Whatcha Griddlin? </span>
-        The SmartTemp Griddle
-      </h1>
-      <p>Featuring thermostat temperature control with digital display</p>
-      <a class="c-btn" href="#"><span>Show Now</span></a>
+    <div class="c-lead__overlay">
+      <div class="o-prose">
+        <h1 class="o-header">
+          <span>Whatcha Griddlin? </span>
+          The SmartTemp Griddle
+        </h1>
+        <p>Featuring thermostat temperature control with digital display</p>
+        <a class="c-btn" href="#"><span>Show Now</span></a>
+      </div>
     </div>
   </div>
 </section>

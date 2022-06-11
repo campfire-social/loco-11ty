@@ -1,0 +1,47 @@
+.o-flexEmbed {
+
+    $c: &;
+
+    display: block;
+    overflow: hidden;
+    position: relative;
+
+    &__ratio {
+        display: block;
+        padding-bottom: 100%;
+        width: 100%;
+
+        &--hero {
+            padding-bottom: 40vh;
+
+            @media (min-width: $bkp-wide) {
+                padding-bottom: 40.98361%;
+            }
+
+        }
+    }
+
+    &__content {
+        bottom: 0;
+        height: auto;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        object-fit: cover;
+        object-position: 33% 33%;
+    }
+    img#{$c}__content {
+        height: 100%;
+    }
+}
+
+@supports ((-o-object-fit: cover) or (object-fit: cover)) {
+    .o-flexEmbed {
+        $c: &;
+
+        img#{$c}__content {
+            height: 100%;
+        }
+    }
+}
