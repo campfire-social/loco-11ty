@@ -1,0 +1,58 @@
+.featurette {
+
+    padding: $spacing-2xl*2 0;
+    overflow-x: hidden;
+    position: relative;
+
+    &__panel {
+        position: absolute;
+        top: 0; 
+        right: 0; 
+        height: 100%; 
+        width: 33.333%;
+        z-index: 1;
+        background-color: $color-orange;
+    }
+
+    &__content {
+        @media (min-width: $bkp-desktop) {
+            display: flex;
+            flex: 0 1 auto;
+            flex-direction: row;
+            align-items: center;
+            margin-left: -$spacing-xl;
+            margin-right: -$spacing-xl;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    &__media {
+
+        @media (min-width: $bkp-desktop) {
+            flex-basis: 50%;
+            max-width: 50%;
+            flex: 0 0 auto;
+            padding-right: $spacing-xl;
+            padding-left: $spacing-xl;
+
+        }
+
+    }
+
+    &__text {
+
+        @media (min-width: $bkp-desktop) {
+            flex-basis: 50%;
+            max-width: 50%;
+            flex: 0 0 auto;
+            padding-right: $spacing-lg;
+            padding-left: $spacing-lg;
+        }
+
+
+
+    }
+
+}

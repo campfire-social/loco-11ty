@@ -2,6 +2,8 @@
 
 // Original post by Harry Roberts https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
 
+
+
 // 01. Settings
 @import '01-settings/settings.config';
 @import '01-settings/settings.animations';
@@ -18,6 +20,7 @@
 @import '02-tools/tools.on-event';
 @import '02-tools/tools.placeholder';
 @import '02-tools/tools.spacing';
+@import '02-tools/tools.transparent-color';
 
 // 03. Generic
 @import '03-generic/generic.normalize';
@@ -26,17 +29,60 @@
 // 04. Elements
 @import '04-elements/elements.all';
 @import '04-elements/elements.body';
+@import '04-elements/elements.headings';
 
 // 05. Objects 
 @import '05-objects/objects.container';
+@import '05-objects/objects.section';
 @import '05-objects/objects.flex-embed';
 @import '05-objects/objects.prose';
+@import '05-objects/objects.heading';
+@import '05-objects/objects.eyebrow';
+@import '05-objects/objects.subheading';
+@import '05-objects/objects.figure';
+@import '05-objects/objects.menu';
+@import '05-objects/objects.address';
+@import '05-objects/objects.hours';
+@import '05-objects/objects.groove';
+@import '05-objects/objects.grid';
+@import '05-objects/objects.star-rating';
+@import '05-objects/objects.review';
+@import '05-objects/objects.video';
 
 // 06. Components 
 @import '06-components/components.button';
 @import '06-components/components.lead';
+@import '06-components/components.featurette';
+@import '06-components/components.card';
+@import '06-components/components.splide';
+@import '06-components/components.newsletter';
+@import '06-components/components.footer';
+@import '06-components/components.products';
 
 // 99. Utilities
 @import '99-utilities/utilities.clearfix';
 @import '99-utilities/utilities.text';
 @import '99-utilities/utilities.visibility';
+
+
+.ambassadors {
+    padding: $spacing-2xl 0;
+    position: relative;
+    
+    .container {
+        z-index: 2;
+        position: relative;
+    }
+
+    &__bg {
+        position: absolute;
+        z-index: 1;
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 70%;
+        background-color: $color-sand;
+    }
+
+
+}

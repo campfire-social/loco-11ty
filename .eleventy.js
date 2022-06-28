@@ -29,15 +29,21 @@ module.exports = function (config) {
         dynamicPartials: true 
     });
 
+    config.addWatchTarget("./src/css");
+    config.addWatchTarget("./src/js");
+
     config.setBrowserSyncConfig({
-		files: './dist/assets/styles/**/*.css'
+		files: [
+            './dist/assets/styles/**/*.css',
+            './dist/assets/scripts/**/*.js'
+        ]
 	});
 
     config.addPassthroughCopy({
         "./src/favicon" : "favicon",
         "./src/fonts" : "assets/fonts",
         "./src/images" : "assets/images",
-        "./src/css" : "assets/styles"
+        "./src/css" : "assets/styles",
     });
 
     config.addNunjucksAsyncShortcode("image", imageShortcode);
@@ -52,7 +58,7 @@ module.exports = function (config) {
         data: "data"
       },
       passthroughFileCopy: true,
-      templateFormats: ["liquid", "html", "md"],
+      templateFormats: ["liquid", "html", "md", "11ty.js"],
       htmlTemplateEngine: "liquid", 
       markdownTemplateEngine: "liquid",
     };

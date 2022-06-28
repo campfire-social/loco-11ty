@@ -1,0 +1,19 @@
+.heading {
+
+    font-family: $font-display;
+    margin: 0; 
+
+    &--display {
+        font-size: 5rem; 
+    }
+
+    &--two {
+        font-size: 3.25rem;
+    }
+
+    &--three {
+        font-family: inherit;
+        font-weight: 800;
+        font-size: 1.875rem;
+    }
+}

@@ -1,17 +1,21 @@
-.c-btn {
+.btn {
     
     @include basic-transition((transform, color, border-color, background-color));
   
     display: inline-block;
-    padding: 1em 1.5em 1em;
-    font-size: 0.8rem;
-    font-weight: 700;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    font-family: $font-display;
+    font-weight: 800;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 0.1em;
+    letter-spacing: $letter-spacing;
     color: $color-dark;
-    border: 1px solid $color-dark;
+    border: 1px solid transparent;
+    background-color: transparent;
     cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
   
     @include on-event {
       color: $color-grey;
@@ -32,12 +36,12 @@
     }
   }
   
-  .c-btn--block {
+  .btn--block {
     display: block;
     width: 100%;
   }
   
-  .c-btn--lg {
+  .btn--lg {
     padding-top: 20px;
     padding-bottom: 19px;
   
@@ -46,10 +50,10 @@
     }
   }
   
-  .c-btn--primary {
-    border-color: $color-primary;
+  .btn--primary {
+    border-color: $color-orange;
     color: #fff;
-    background-color: $color-primary;
+    background-color: $color-orange;
   
     @include on-event {
       border-color: $color-dark;
@@ -58,12 +62,36 @@
     }
   }
   
-  .c-btn--secondary {
-    border-color: $color-secondary;
-    color: $color-secondary;
+  .btn--secondary {
+    border-color: $color-black;
+    background-color: $color-black;
+    color: $color-white;
   
     @include on-event {
       border-color: $color-dark;
-      color: $color-dark;
+      background-color: $color-dark;
+      color: $color-white;
     }
+  }
+
+  .btn--inverse {
+    border-color: $color-white;
+    color: $color-orange;
+    background: $color-white;
+  
+    @include on-event {
+      border-color: $color-dark;
+      background: $color-dark;
+      color: $color-white;
+    }
+  }
+
+
+  .btn--link { 
+    border-width: 0;
+    color: $color-orange;
+    font: inherit;
+    padding: 0;
+    font-weight: 700;
+    letter-spacing: normal;
   }

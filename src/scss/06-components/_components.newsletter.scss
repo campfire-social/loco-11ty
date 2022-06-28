@@ -1,0 +1,120 @@
+.newsletter {
+
+    background-color: $color-orange; 
+    color: $color-white;
+    overflow-x: hidden;
+
+    &__content {
+        @media (min-width: $bkp-desktop) {
+            display: flex;
+            flex: 0 1 auto;
+            flex-direction: row;
+            align-items: center;
+            //margin-left: -$spacing-xl;
+            //margin-right: -$spacing-xl;
+            box-sizing: border-box;
+        }
+    }
+
+    &__text {
+
+        padding: $spacing-xl;
+        text-align: center;
+
+        @media (min-width: $bkp-desktop) {
+            text-align: left;
+            flex-basis: 50%;
+            max-width: 50%;
+            flex: 1 1 auto;
+            padding-right: $spacing-xl*2;
+            padding-left: $spacing-xl*2;
+
+        }
+
+    }
+
+    &__media {
+
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+        @media (min-width: $bkp-desktop) {
+            flex-basis: 50%;
+            max-width: 50%;
+            flex: 1 1 auto;
+            height: 100%;
+
+        }
+
+        & img {
+            width: 100%;
+            object-fit: fill;
+        }
+
+    }
+
+    &__form {
+        
+        display: flex; 
+        flex-direction: column;
+
+        @media (min-width: $bkp-desktop) {
+            flex-direction: row;
+            border-radius: 4px;   
+            border: 1px solid $color-white; 
+            overflow: hidden;
+        }
+    }
+
+    &__input {
+        @include background-opacity( $color-white, 0.25);
+        border: 1px solid $color-white;
+        border-radius: 4px;
+        appearance: none;
+        -webkit-appearance: none;
+        padding: 0 1rem;
+        color: $color-white;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 1rem;
+        line-height: 3.35rem;
+        font-size: 1.125rem;
+
+        @media (min-width: $bkp-desktop) {
+            border-color: transparent;
+            flex: 1 1 auto;
+            border-radius: 0;
+        }
+
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $color-white;
+            opacity: 1; /* Firefox */
+            font-size: 1.125rem;
+          }
+          
+          &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: $color-white;
+            font-size: 1.125rem;
+          }
+          
+          &::-ms-input-placeholder { /* Microsoft Edge */
+            color: $color-white;
+            font-size: 1.125rem;
+          }
+    }
+
+    &__submit {
+        @extend .btn;
+        @extend .btn--inverse;
+        margin-top: $spacing-lg; 
+
+        @media (min-width: $bkp-desktop) {
+            flex: 0 0 auto;
+            border-radius: 0;
+            margin-top: 0; 
+        }
+    }
+
+}

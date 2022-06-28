@@ -1,0 +1,15 @@
+.groove {
+    border: 1px dashed $color-grey;
+    height: 2px;
+    margin: $spacing-xl 0;
+
+    &--blue {
+        border-color: $color-blue;
+    }
+
+    &--contained {
+        max-width: 54rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

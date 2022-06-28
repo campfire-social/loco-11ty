@@ -1,0 +1,21 @@
+.subheading {
+
+    font-size: 1.125rem;
+    
+    &--lg {
+        font-size: 2rem; 
+    }
+
+    &--sm {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: .875rem;
+    }
+
+    &--orange {
+        font-weight: 700;
+        color: $color-orange;
+        text-transform: uppercase;
+    }
+
+}

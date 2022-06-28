@@ -1,10 +1,11 @@
-.o-flexEmbed {
+.flexEmbed {
 
     $c: &;
 
     display: block;
     overflow: hidden;
     position: relative;
+    margin: 0;
 
     &__ratio {
         display: block;
@@ -12,12 +13,24 @@
         width: 100%;
 
         &--hero {
-            padding-bottom: 40vh;
+            padding-bottom: 44vh;
 
             @media (min-width: $bkp-wide) {
-                padding-bottom: 40.98361%;
+                padding-bottom: 44%;
             }
 
+        }
+
+        &--banner {
+            padding-bottom: 44vh;
+
+            @media (min-width: $bkp-wide) {
+                padding-bottom: 38%;
+            }
+        }
+
+        &--square {
+            padding-bottom: 100%;
         }
     }
 
@@ -37,7 +50,7 @@
 }
 
 @supports ((-o-object-fit: cover) or (object-fit: cover)) {
-    .o-flexEmbed {
+    .flexEmbed {
         $c: &;
 
         img#{$c}__content {

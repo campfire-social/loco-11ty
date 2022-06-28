@@ -11,6 +11,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
   <link rel="manifest" href="/favicon/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Besley:wght@700;800&family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="/assets/styles/main.css">
 </head>
 <body>
@@ -127,20 +132,22 @@
     <main>
       
 
-<section class="c-lead">
-  <div class="c-lead__content">
-    <div class="o-flexEmbed">
-      <div class="o-flexEmbed__ratio o-flexEmbed__ratio--hero"></div>
-      <img  class="o-flexEmbed__content" src="/assets/images/griddle-001.jpg" alt="placeholder" />
-    </div>
-    <div class="c-lead__overlay">
-      <div class="o-prose">
-        <h1 class="o-header">
-          <span>Whatcha Griddlin? </span>
+<section class="lead">
+  <div class="lead__overlay"></div>
+
+  <div class="flexEmbed">
+    <div class="flexEmbed__ratio flexEmbed__ratio--hero"></div>
+    <img class="flexEmbed__content" src="/assets/images/griddle-001.jpg" alt="placeholder" />
+  </div>
+  <div class="lead__content">
+    <div class="lead__text">
+      <div class="prose">
+        <h1 class="heading heading--display">
+          <span class="eyebrow">Whatcha Griddlin? </span>
           The SmartTemp Griddle
         </h1>
-        <p>Featuring thermostat temperature control with digital display</p>
-        <a class="c-btn" href="#"><span>Show Now</span></a>
+        <p class="subheading subheading--lg">Featuring thermostat temperature control with digital display</p>
+        <a class="btn btn--primary" href="#"><span>Show Now</span></a>
       </div>
     </div>
   </div>
@@ -148,27 +155,39 @@
 
 
 
-<section>
-  <div>
-    <div>
-      <div>
-        <div>
-          <img src="https://via.placeholder.com/720x720" alt="placeholder" />
-          <button>
-            <span>Play Video</span>
-          </button>
+<section class="featurette">
+  <div class="featurette__panel"></div>
+  <div class="container">
+    <div class="featurette__content">
+
+      <div class="featurette__text">
+        <div class="prose prose--lg">
+          <h2 class="heading heading--two">
+            <span class="eyebrow">Featured Product</span>
+            Hey Neighbor, Whatcha' Griddlin?
+          </h2>
+          <p>Introducing Griddles from LoCo. Your new favorite way to cook. Featuring our SmartTemp technology, making
+            it
+            easy to dial in your desired cooking temperature in 25 degree increments and accurately maintain those
+            precise
+            cooking temperatures . Take the guesswork out of your griddlin’ so you can easily repeat recipes time and
+            time
+            again!</p>
+          <a class="btn btn--primary" href="#"><span>Shop Now</span></a>
         </div>
       </div>
-      <div>
-        <h2>
-          <span>Featured Product </span>
-          Hey Neighbor, Whatcha' Griddlin?
-        </h2>
-        <p>Introducing Griddles from LoCo. Your new favorite way to cook. Featuring our SmartTemp technology, making it
-          easy to dial in your desired cooking temperature in 25 degree increments and accurately maintain those precise
-          cooking temperatures . Take the guesswork out of your griddlin’ so you can easily repeat recipes time and time
-          again!</p>
-        <a href="#"><span>Shop Now</span></a>
+      <div class="featurette__media">
+        <figure class="video">
+          <div class="video__wrapper">
+            <img class="video__poster" src="/assets/images/video.jpg" alt="placeholder" style="width: 100%" />
+            <button class="video__play">
+              <svg width="39" height="51" viewBox="0 0 39 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.250122 0V50.23L5.03137 47.0335L33.7189 28.3115L38.5001 25.115L33.7189 21.9185L5.03137 3.19645L0.250122 0Z"/>
+            </svg>
+              <span class="hidden-visually">Play Video</span>
+            </button>
+          </div>
+        </figure>
       </div>
     </div>
   </div>
@@ -176,70 +195,95 @@
 
 
 
-<section>
-  <div>
-    <div></div>
-    <picture>
-      <source media="(max-width: 752px)" sizes="100vw" srcset="https://via.placeholder.com/390x470">
-      <img src="https://via.placeholder.com/1440x620" alt="Placeholder">
-    </picture>
+<section class="lead">
+  <div class="lead__overlay"></div>
+
+  <div class="flexEmbed">
+    <div class="flexEmbed__ratio flexEmbed__ratio--banner"></div>
+    <img class="flexEmbed__content" src="/assets/images/griddle-001.jpg" alt="placeholder" />
   </div>
-  <div>
-    <div>
-      <h2>Griddle Recipes</h2>
-      <p>Your new favorite way to cook</p>
-      <a href="#">Browse Recipes</a>
+  <div class="lead__content">
+    <div class="lead__text">
+      <div class="prose">
+        <h2 class="heading heading--display">
+          Griddle Recipes
+        </h2>
+        <p class="subheading subheading--lg">Your new favorite way to cook</p>
+        <a class="btn btn--primary" href="#"><span>Browse Recipes</span></a>
+      </div>
     </div>
   </div>
 </section>
 
 
 
-<section>
+<section class="products">
   <div>
-    <div>
-      <div>
-        <h2>
-          <span>Popular Products </span>
+    <div class="container">
+      <div class="u-text-center">
+        <h2 class="heading heading--two">
+          <span class="eyebrow">Popular Products </span>
           Cook Faster. Party Longer
         </h2>
+        <div class="groove groove--blue groove--contained"></div>
       </div>
-      <div>
-        <ul>
-          <li>
-            <div>
-              <div>
-                <img src="https://via.placeholder.com/350x390" alt="Placeholder">
-              </div>
-              <div>
-                <h3>Boiling Kits</h3>
-                <a href="#">Shop Now</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <div>
-                <img src="https://via.placeholder.com/350x390" alt="Placeholder">
-              </div>
-              <div>
-                <h3>Cart Boilers</h3>
-                <a href="#">Shop Now</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <div>
-                <img src="https://via.placeholder.com/350x390" alt="Placeholder">
-              </div>
-              <div>
-                <h3>Pots</h3>
-                <a href="#">Shop Now</a>
-              </div>
-            </div>
-          </li>
-        </ul>
+      <div class="splide is-initialized is-active">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <article class="card">
+                <div class="card__header">
+                  <figure class="figure">
+                    <img class="figure__img" src="https://via.placeholder.com/350x390" alt="Placeholder">
+                  </figure>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">
+                    <h3 class="heading heading--three">Boiling Kits</h3>
+                  </div>
+                  <div class="card__copy">
+                    <a class="btn btn--link" href="#">Shop Now</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="splide__slide">
+              <article class="card">
+                <div class="card__header">
+                  <figure class="figure">
+                    <img class="figure__img" src="https://via.placeholder.com/350x390" alt="Placeholder">
+                  </figure>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">
+                    <h3 class="heading heading--three">Cart Boilers</h3>
+                  </div>
+                  <div class="card__copy">
+                    <a class="btn btn--link" href="#">Shop Now</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="splide__slide">
+              <article class="card">
+                <div class="card__header">
+                  <figure class="figure">
+                    <img class="figure__img" src="https://via.placeholder.com/350x390" alt="Placeholder">
+                  </figure>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">
+                    <h3 class="heading heading--three">Pots</h3>
+                  </div>
+                  <div class="card__copy">
+                    <a class="btn btn--link" href="#">Shop Now</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </div>
@@ -247,88 +291,105 @@
 
 
 
-<section>
-  <div>
-    <div></div>
-    <picture>
-      <source media="(max-width: 752px)" sizes="100vw" srcset="https://via.placeholder.com/390x470">
-      <img src="https://via.placeholder.com/1440x620" alt="Placeholder">
-    </picture>
+<section class="lead">
+  <div class="lead__overlay"></div>
+
+  <div class="flexEmbed">
+    <div class="flexEmbed__ratio flexEmbed__ratio--hero"></div>
+    <img class="flexEmbed__content" src="/assets/images/bk-banner.jpg" alt="placeholder" />
   </div>
-  <div>
-    <div>
-      <h2>Go LoCo!</h2>
-      <p>The cookout starts here</p>
-      <a href="#">Shop Boiling Kits</a>
+  <div class="lead__content">
+    <div class="lead__text">
+      <div class="prose">
+        <h2 class="heading heading--display">
+          Go LoCo!
+        </h2>
+        <p class="subheading subheading--lg">The cookout starts here</p>
+        <a class="btn btn--primary" href="#"><span>Shop Boiling Kits</span></a>
+      </div>
     </div>
   </div>
 </section>
 
 
 
-<section>
+<section class="section">
   <div>
-    <div>
-      <div>
-        <h2>
-          <span>Customer Reviews </span>
+    <div class="container">
+      <div class="u-text-center">
+        <h2 class="heading heading--two">
+          <span class="eyebrow">Customer Reviews </span>
           Sharing the Passion for #LoCoCookers
         </h2>
       </div>
-      <div>
-        <ul>
-          <li>
-            <figure>
-              <p>
-                <span>
-                  <span>
-                    5 out of 5 stars
-                  </span>
-                </span>
-              </p>
-              <blockquote>
-                Easy to assemble, with only a few screws and the lighting mechanism.
-              </blockquote>
-              <figcaption>
-                Sarah | <cite>LoCo 80qt Kit</cite>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <p>
-                <span>
-                  <span>
-                    5 out of 5 stars
-                  </span>
-                </span>
-              </p>
-              <blockquote>
-                This thing works like a champ! Heats up fast and gets the job done!
-              </blockquote>
-              <figcaption>
-                Karod | <cite>LoCo 80qt Kit</cite>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <p>
-                <span>
-                  <span>
-                    5 out of 5 stars
-                  </span>
-                </span>
-              </p>
-              <blockquote>
-                Got to boil fast and love the ignition feature.
-              </blockquote>
-              <figcaption>
-                Mike D. | <cite>LoCo 80qt Kit</cite>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+      <div class="splide is-initialized is-active">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <figure class="card card--filled">
+                <div class="card__body">
+                  <div class="review">
+                    <p class="review__rating">
+                      <span class="star-rating">
+                        <span class="star-rating__fill" style="width: 100%;">
+                          5 out of 5 stars
+                        </span>
+                      </span>
+                    </p>
+                    <blockquote class="review__quote">
+                      Easy to assemble, with only a few screws and the lighting mechanism.
+                    </blockquote>
+                    <figcaption class="review__cite">
+                      Sarah | <cite>LoCo 80qt Kit</cite>
+                    </figcaption>
+                  </div>
+                </div>
+              </figure>
+            </li>
+            <li class="splide__slide">
+              <figure class="card card--filled">
+                <div class="card__body">
+                  <div class="review">
+                    <p class="review__rating">
+                      <span class="star-rating">
+                        <span class="star-rating__fill" style="width: 100%;">
+                          5 out of 5 stars
+                        </span>
+                      </span>
+                    </p>
+                    <blockquote class="review__quote">
+                      Easy to assemble, with only a few screws and the lighting mechanism.
+                    </blockquote>
+                    <figcaption class="review__cite">
+                      Sarah | <cite>LoCo 80qt Kit</cite>
+                    </figcaption>
+                  </div>
+                </div>
+              </figure>
+            </li>
+            <li class="splide__slide">
+              <figure class="card card--filled">
+                <div class="card__body">
+                  <div class="review">
+                    <p class="review__rating">
+                      <span class="star-rating">
+                        <span class="star-rating__fill" style="width: 100%;">
+                          5 out of 5 stars
+                        </span>
+                      </span>
+                    </p>
+                    <blockquote class="review__quote">
+                      Easy to assemble, with only a few screws and the lighting mechanism.
+                    </blockquote>
+                    <figcaption class="review__cite">
+                      Sarah | <cite>LoCo 80qt Kit</cite>
+                    </figcaption>
+                  </div>
+                </div>
+              </figure>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -336,66 +397,91 @@
 
 
 
-<section>
-  <div>
-    <div>
-      <h2>
-        <span>Brand Ambassadors </span>
+<section class="ambassadors">
+  <div class="ambassadors__bg"></div>
+  <div class="container">
+    <div class="prose prose--center">
+      <h2 class="heading heading--two">
+        <span class="eyebrow">Brand Ambassadors </span>
         Pull Up a Chair and Go #LoCo with Us
       </h2>
     </div>
+    <div class="groove groove--blue groove--contained"></div>
     <div>
-      <ul>
-        <li>
-          <div>
-            <div>
-              <img src="https://via.placeholder.com/412x390" alt="Placeholder">
+      <ul class="grid">
+        <li class="grid__item">
+          <article class="card">
+            <div class="card__header">
+               <figure class="flexEmbed">
+              <div class="flexEmbed__ratio flexEmbed__ratio--square"></div>
+                <img class="flexEmbed__content" src="/assets/images/pitman.jpg" alt="Placeholder">
+              </figure>
             </div>
-            <div>
-              <h3>Matt Pittman</h3>
-              <p>Founder of Meat Church BBQ</p>
+            <div class="card__body">
+              <div class="card__title">
+                <h3 class="heading heading--three">Matt Pittman</h3>
+              </div>
+              <div class="card__copy">
+                <p class="subheading subheading--orange">Founder of Meat Church BBQ</p>
+              </div>
             </div>
-          </div>
+          </article>
         </li>
-        <li>
-          <div>
-            <div>
-              <img src="https://via.placeholder.com/412x390" alt="Placeholder">
+        <li class="grid__item">
+          <article class="card">
+            <div class="card__header">
+               <figure class="flexEmbed">
+              <div class="flexEmbed__ratio flexEmbed__ratio--square"></div>
+                <img class="flexEmbed__content" src="/assets/images/cason.jpg" alt="Placeholder">
+              </figure>
             </div>
-            <div>
-              <h3>Big Moe Cason</h3>
-              <p>Pitmaster</p>
+            <div class="card__body">
+              <div class="card__title">
+                <h3 class="heading heading--three">Big Moe Cason</h3>
+              </div>
+              <div class="card__copy">
+                <p class="subheading subheading--orange">Pitmaster</p>
+              </div>
             </div>
-          </div>
+          </article>
         </li>
-        <li>
-          <div>
-            <div>
-              <img src="https://via.placeholder.com/412x390" alt="Placeholder">
+        <li class="grid__item">
+          <article class="card">
+            <div class="card__header">
+              <figure class="flexEmbed">
+              <div class="flexEmbed__ratio flexEmbed__ratio--square"></div>
+                <img class="flexEmbed__content" src="/assets/images/bourgeois.jpg" alt="Placeholder">
+              </figure>
             </div>
-            <div>
-              <h3>Chef Jean-Paul Bourgeois</h3>
-              <p>Chef</p>
+            <div class="card__body">
+              <div class="card__title">
+                <h3 class="heading heading--three">Chef Jean-Paul Bourgeois</h3>
+              </div>
+              <div class="card__copy">
+                <p class="subheading subheading--orange">Chef</p>
+              </div>
             </div>
-          </div>
+          </article>
         </li>
       </ul>
     </div>
-  </div>
-  <div>
-    <div>
-      <div>
+  
+  
+    <div class="grid">
+      <div class="grid__item grid__item--1of2">
         <p>Our goal is for your platform to share LoCo with anyone and everyone, inviting them to take a seat at your
           table! Whether it's grandparents, aunts, uncles, neighbors or friends, we believe you have the chance to
           create community through our LoCo products.</p>
       </div>
-      <div>
-        <a href="#">
+      <div class="grid__item grid__item--1of2">
+      <div style="text-align: right;">
+        <a class="btn btn--primary" href="#">
           <span>View Brand Ambassadors</span>
         </a>
-        <a href="#">
+        <a class="btn btn--secondary" href="#">
           <span>Become a Brand Ambassador</span>
         </a>
+        </div>
       </div>
     </div>
   </div>
@@ -403,29 +489,32 @@
 
 
 
-<section>
-  <div>
-    <div>
-      <h2>Stay in the Loop</h2>
-      <p>Crank it up with tips and recipes by subscribing</p>
-      <form>
-        <label for="stayInTheLoop"> Your email address
-        </label>
-        <input id="stayInTheLoop" name="stayInTheLoop" type="email" placeholder="Email">
-        <button type="submit">Subscribe</button>
-      </form>
+<section class="newsletter">
+  <div class="newsletter__content">
+    <div class="newsletter__text">
+      <div>
+        <h2 class="heading heading--two">Stay in the Loop</h2>
+        <p class="subheading">Crank it up with tips and recipes by subscribing</p>
+
+        <form class="newsletter__form">
+          <label for="stayInTheLoop" class="hidden-visually"> Your email address
+          </label>
+          <input id="stayInTheLoop" class="newsletter__input" name="stayInTheLoop" type="email" placeholder="Email">
+          <button class="newsletter__submit" type="submit">Subscribe</button>
+        </form>
+      </div>
     </div>
-  </div>
-  <div>
-    <img src="https://via.placeholder.com/740x430" alt="Placeholder">
+    <div class="newsletter__media">
+      <img class="" src="/assets/images/newsletter.jpg" alt="Placeholder">
+    </div>
   </div>
 </section>
 
     </main>
-    <footer>
-  <div>
-    <div>
-      <div>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__info">
         <div>
           <svg width="89" height="45" viewBox="0 0 89 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -467,112 +556,116 @@
           </svg>
 
         </div>
-        <address>
+        <address class="address">
           Atlanta, GA <br>
           <a href="tel:18003910436">1-800-391-0436</a> <br>
           <a href="mailto:customerservice@lococookers.com">customerservice@lococookers.com</a>
         </address>
-        <div>
+        <div class="hours">
           <p><time datetime="Mo,Fr 8:00-17:00">Monday - Friday: <br> 8am - 5pm <abbr
                 title="Eastern Standard Time">EST</abbr></time></p>
         </div>
-        <ul>
-          <li>
-            <a href="#">About</a>
+      </div>
+      <div class="footer__menu">
+        <h3 class="heading heading--three">Shop</h3>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Fryers</a>
           </li>
-          <li>
-            <a href="#">Instruction Manuals</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Cart Boilers</a>
           </li>
-          <li>
-            <a href="#">Send Us a Message</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Boilng Kits</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Pots</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Stands</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Swag</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Accessories</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Griddles</a>
           </li>
         </ul>
       </div>
-      <div>
-        <h3>Shop</h3>
-        <ul>
-          <li>
-            <a href="#">Fyers</a>
+      <div class="footer__menu">
+        <h3 class="heading heading--three">Here for you</h3>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">LoCo Cookers Blog</a>
           </li>
-          <li>
-            <a href="#">Cart Boilers</a>
+          <li class="menu__item"> 
+            <a class="menu__link" href="#">Brand Ambassadors</a>
           </li>
-          <li>
-            <a href="#">Boilng Kits</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Register Your Cooker</a>
           </li>
-          <li>
-            <a href="#">Pots</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Shipping & Returns</a>
           </li>
-          <li>
-            <a href="#">Stands</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Privacy Policy</a>
           </li>
-          <li>
-            <a href="#">Swag</a>
-          </li>
-          <li>
-            <a href="#">Accessories</a>
-          </li>
-          <li>
-            <a href="#">Griddles</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Terms & Conditions</a>
           </li>
         </ul>
       </div>
-      <div>
-        <h3>Here for you</h3>
-        <ul>
-          <li>
-            <a href="#">LoCo Cookers Blog</a>
-          </li>
-          <li>
-            <a href="#">Brand Ambassadors</a>
-          </li>
-          <li>
-            <a href="#">Register Your Cooker</a>
-          </li>
-          <li>
-            <a href="#">Shipping & Returns</a>
-          </li>
-          <li>
-            <a href="#">Privacy Policy</a>
-          </li>
-          <li>
-            <a href="#">Terms & Conditions</a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h3>Newsletter</h3>
-        <p>Crank it up with tips and recipes by subscribing</p>
-        <form>
-          <label for="footerNewsletter"> Your email address
+      <div class="footer__connect">
+        <div class="prose">
+          <h3 class="heading heading--three">Newsletter</h3>
+          <p class="subheading subheading--sm">Crank it up with tips and recipes by subscribing</p>
+        </div>
+        <form class="footer__form">
+          <label for="footerNewsletter" class="hidden-visually"> Your email address
           </label>
-          <input id="footerNewsletter" name="footerNewsletter" type="email" placeholder="Email">
-          <button type="submit">Subscribe</button>
+          <input class="footer__input" id="footerNewsletter" name="footerNewsletter" type="email" placeholder="Email">
+          <button class="footer__submit" type="submit">Subscribe</button>
         </form>
-        <ul>
-          <li>
-            <a href="#">
-              <span>Instagram</span>
+        <ul class="menu menu--horizontal">
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <span class="hidden-visually">Instagram</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 0C2.243 0 0 2.243 0 5V13C0 15.757 2.243 18 5 18H13C15.757 18 18 15.757 18 13V5C18 2.243 15.757 0 13 0H5ZM5 2H13C14.654 2 16 3.346 16 5V13C16 14.654 14.654 16 13 16H5C3.346 16 2 14.654 2 13V5C2 3.346 3.346 2 5 2ZM14 3C13.7348 3 13.4804 3.10536 13.2929 3.29289C13.1054 3.48043 13 3.73478 13 4C13 4.26522 13.1054 4.51957 13.2929 4.70711C13.4804 4.89464 13.7348 5 14 5C14.2652 5 14.5196 4.89464 14.7071 4.70711C14.8946 4.51957 15 4.26522 15 4C15 3.73478 14.8946 3.48043 14.7071 3.29289C14.5196 3.10536 14.2652 3 14 3ZM9 4C6.243 4 4 6.243 4 9C4 11.757 6.243 14 9 14C11.757 14 14 11.757 14 9C14 6.243 11.757 4 9 4ZM9 6C10.654 6 12 7.346 12 9C12 10.654 10.654 12 9 12C7.346 12 6 10.654 6 9C6 7.346 7.346 6 9 6Z" fill="#949494"/>
+</svg>
+
             </a>
           </li>
-          <li>
-            <a href="#">
-              <span>Facebook</span>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <span class="hidden-visually">Facebook</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0C4.489 0 0 4.489 0 10C0 15.511 4.489 20 10 20C15.511 20 20 15.511 20 10C20 4.489 15.511 0 10 0ZM10 2C14.4301 2 18 5.56988 18 10C18 14.0145 15.0653 17.313 11.2188 17.8984V12.3848H13.5469L13.9121 10.0195H11.2188V8.72656C11.2188 7.74356 11.539 6.87109 12.459 6.87109H13.9355V4.80664C13.6756 4.77164 13.1268 4.69531 12.0898 4.69531C9.92385 4.69531 8.6543 5.83931 8.6543 8.44531V10.0195H6.42774V12.3848H8.6543V17.8789C4.87029 17.2408 2 13.9702 2 10C2 5.56988 5.56988 2 10 2Z" fill="#949494"/>
+</svg>
+
             </a>
           </li>
-          <li>
-            <a href="#">
-              <span>YouTube</span>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <span class="hidden-visually">YouTube</span>
+              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0C10 0 3.74555 -3.1352e-05 2.18555 0.417969C1.32455 0.647969 0.647969 1.32555 0.417969 2.18555C-3.13521e-05 3.74555 0 8 0 8C0 8 -3.13521e-05 12.2545 0.417969 13.8145C0.647969 14.6755 1.32555 15.352 2.18555 15.582C3.74555 16 10 16 10 16C10 16 16.2545 16 17.8145 15.582C18.6745 15.352 19.352 14.6745 19.582 13.8145C20 12.2545 20 8 20 8C20 8 20 3.74555 19.582 2.18555C19.352 1.32555 18.6745 0.647969 17.8145 0.417969C16.2545 -3.1352e-05 10 0 10 0ZM10 2C12.882 2 16.4909 2.13361 17.2969 2.34961C17.4659 2.39461 17.6044 2.53312 17.6504 2.70312C17.8914 3.60112 18 6.342 18 8C18 9.658 17.8914 12.3979 17.6504 13.2969C17.6054 13.4659 17.4669 13.6044 17.2969 13.6504C16.4919 13.8664 12.882 14 10 14C7.119 14 3.51013 13.8664 2.70313 13.6504C2.53413 13.6054 2.39561 13.4669 2.34961 13.2969C2.10861 12.3989 2 9.658 2 8C2 6.342 2.10861 3.60117 2.34961 2.70117C2.39461 2.53317 2.53313 2.39461 2.70313 2.34961C3.50813 2.13361 7.118 2 10 2ZM8 4.53516V11.4648L14 8L8 4.53516Z" fill="#949494"/>
+</svg>
+
             </a>
           </li>
         </ul>
       </div>
     </div>
-    <div>
+    <div class="footer__copy">
       <p>&#169; 2022 LoCo Cookers. All rights reserved.</p>
     </div>
   </div>
 </footer>
   </div>
+  <script type="text/javascript" src="/assets/scripts/main.js"></script>
 </body>
 </html>

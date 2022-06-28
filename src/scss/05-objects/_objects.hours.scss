@@ -1,0 +1,11 @@
+.hours {
+    text-transform: uppercase;
+    line-height: 1.25;
+    font-style: normal;
+    font-weight: 600;
+
+    a {
+        color: $color-dark;
+        text-decoration: none;
+    }
+}

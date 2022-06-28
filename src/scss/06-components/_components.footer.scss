@@ -1,0 +1,138 @@
+.footer {
+
+    padding: $spacing-2xl*2 $spacing-lg;
+
+    &__content {
+
+        @media (min-width: $bkp-desktop) {
+            display: flex;
+        }
+    }
+
+    &__copy {
+        width: 100%;
+        border-top: 1px dashed #C4C4C4;
+        text-align: center;
+        margin-top: $spacing-2xl;
+        padding-top: $spacing-xl;
+        color: $color-d-grey;
+        font-size: .875rem;
+    }
+
+    &__form {
+        box-sizing: border-box;
+        display: flex; 
+        flex-direction: column;
+        width: 100%;
+
+        @media (min-width: $bkp-desktop) {
+            flex-direction: row;
+            width: calc(100% - 4px);
+            border-radius: 4px;   
+            
+            overflow: hidden;
+        }
+    }
+
+    &__input {
+        @include background-opacity( $color-white, 0.25);
+        border: 1px solid $color-grey;
+        border-radius: 4px;
+        appearance: none;
+        -webkit-appearance: none;
+        padding: 0 1rem;
+        color: $color-d-grey;
+        background-color: $color-l-grey;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 1rem;
+        line-height: 3.35rem;
+        font-size: 1.125rem;
+
+        @media (min-width: $bkp-desktop) {
+            
+            flex: 0 1 auto;
+            border-radius: 0;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $color-d-grey;
+            opacity: 1; /* Firefox */
+            font-size: 1rem;
+          }
+          
+          &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: $color-d-grey;
+            font-size: 1rem;
+          }
+          
+          &::-ms-input-placeholder { /* Microsoft Edge */
+            color: $color-d-grey;
+            font-size: 1rem;
+          }
+    }
+
+    &__submit {
+        @extend .btn;
+        @extend .btn--primary;
+        margin-top: $spacing-lg; 
+
+        @media (min-width: $bkp-desktop) {
+            
+            flex: 1 1 auto;
+            border-radius: 0;
+            margin-top: 0; 
+            font-size: .875rem;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+        }
+    }
+
+    &__info, 
+    &__connect {
+
+        @media (min-width: $bkp-desktop) {
+            flex-basis: 30%;
+            min-width: 30%;
+            flex: 0 0 auto; 
+        }
+
+    }
+
+    &__connect {
+        
+        .heading + .subheading {
+            margin-top: $spacing-lg;
+        }
+
+        > * + * {
+            margin-top: $spacing-lg; 
+        }
+
+    }
+
+    &__menu  {
+
+        @media (min-width: $bkp-desktop) {
+            flex-basis: 20%;
+            min-width: 20%;
+            flex: 0 0 auto; 
+        }
+
+        .heading + .menu {
+            margin-top: $spacing-lg; 
+        }
+    }
+
+    .heading {
+        color: $color-black;
+    }
+
+    .address, .hours {
+        margin-top: $spacing-lg;
+    }
+
+}

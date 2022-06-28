@@ -1,0 +1,19 @@
+.section {
+
+    padding: $spacing-2xl*2 0;
+
+    &--light-grad {
+       background: linear-gradient(180deg, #F0EDE4 0%, #F9F7F3 100%);
+    }
+
+    &--orange {
+        background-color: $color-orange;
+        color: $color-white;
+    }
+
+    &--tight {
+       padding: 0;
+    }
+
+
+}

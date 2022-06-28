@@ -1,7 +1,7 @@
-<footer>
-  <div>
-    <div>
-      <div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__info">
         <div>
           <svg width="89" height="45" viewBox="0 0 89 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -43,108 +43,102 @@
           </svg>
 
         </div>
-        <address>
+        <address class="address">
           Atlanta, GA <br>
           <a href="tel:18003910436">1-800-391-0436</a> <br>
           <a href="mailto:customerservice@lococookers.com">customerservice@lococookers.com</a>
         </address>
-        <div>
+        <div class="hours">
           <p><time datetime="Mo,Fr 8:00-17:00">Monday - Friday: <br> 8am - 5pm <abbr
                 title="Eastern Standard Time">EST</abbr></time></p>
         </div>
-        <ul>
-          <li>
-            <a href="#">About</a>
+      </div>
+      <div class="footer__menu">
+        <h3 class="heading heading--three">Shop</h3>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Fryers</a>
           </li>
-          <li>
-            <a href="#">Instruction Manuals</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Cart Boilers</a>
           </li>
-          <li>
-            <a href="#">Send Us a Message</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Boilng Kits</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Pots</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Stands</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Swag</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Accessories</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Griddles</a>
           </li>
         </ul>
       </div>
-      <div>
-        <h3>Shop</h3>
-        <ul>
-          <li>
-            <a href="#">Fyers</a>
+      <div class="footer__menu">
+        <h3 class="heading heading--three">Here for you</h3>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">LoCo Cookers Blog</a>
           </li>
-          <li>
-            <a href="#">Cart Boilers</a>
+          <li class="menu__item"> 
+            <a class="menu__link" href="#">Brand Ambassadors</a>
           </li>
-          <li>
-            <a href="#">Boilng Kits</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Register Your Cooker</a>
           </li>
-          <li>
-            <a href="#">Pots</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Shipping & Returns</a>
           </li>
-          <li>
-            <a href="#">Stands</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Privacy Policy</a>
           </li>
-          <li>
-            <a href="#">Swag</a>
-          </li>
-          <li>
-            <a href="#">Accessories</a>
-          </li>
-          <li>
-            <a href="#">Griddles</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Terms & Conditions</a>
           </li>
         </ul>
       </div>
-      <div>
-        <h3>Here for you</h3>
-        <ul>
-          <li>
-            <a href="#">LoCo Cookers Blog</a>
-          </li>
-          <li>
-            <a href="#">Brand Ambassadors</a>
-          </li>
-          <li>
-            <a href="#">Register Your Cooker</a>
-          </li>
-          <li>
-            <a href="#">Shipping & Returns</a>
-          </li>
-          <li>
-            <a href="#">Privacy Policy</a>
-          </li>
-          <li>
-            <a href="#">Terms & Conditions</a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h3>Newsletter</h3>
-        <p>Crank it up with tips and recipes by subscribing</p>
-        <form>
-          <label for="footerNewsletter"> Your email address
+      <div class="footer__connect">
+        <div class="prose">
+          <h3 class="heading heading--three">Newsletter</h3>
+          <p class="subheading subheading--sm">Crank it up with tips and recipes by subscribing</p>
+        </div>
+        <form class="footer__form">
+          <label for="footerNewsletter" class="hidden-visually"> Your email address
           </label>
-          <input id="footerNewsletter" name="footerNewsletter" type="email" placeholder="Email">
-          <button type="submit">Subscribe</button>
+          <input class="footer__input" id="footerNewsletter" name="footerNewsletter" type="email" placeholder="Email">
+          <button class="footer__submit" type="submit">Subscribe</button>
         </form>
-        <ul>
-          <li>
-            <a href="#">
-              <span>Instagram</span>
+        <ul class="menu menu--horizontal">
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <span class="hidden-visually">Instagram</span>
+              {% include 'icons/instagram' %}
             </a>
           </li>
-          <li>
-            <a href="#">
-              <span>Facebook</span>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <span class="hidden-visually">Facebook</span>
+              {% include 'icons/facebook' %}
             </a>
           </li>
-          <li>
-            <a href="#">
-              <span>YouTube</span>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <span class="hidden-visually">YouTube</span>
+              {% include 'icons/youtube' %}
             </a>
           </li>
         </ul>
       </div>
     </div>
-    <div>
+    <div class="footer__copy">
       <p>&#169; 2022 LoCo Cookers. All rights reserved.</p>
     </div>
   </div>

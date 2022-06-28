@@ -7,7 +7,7 @@
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
 
- .u-hidden-visually {
+ .hidden-visually {
     @include hidden-visually;
   }
   
@@ -15,12 +15,12 @@
    * Hide visually and from screen readers.
    */
   
-  .u-hidden {
+  .hidden {
     display: none !important;
   }
   
   @each $name, $value in $breakpoints {
-    .u-hidden–#{$name} {
+    .hidden–#{$name} {
       @include mq($from: $name) {
         display: none !important;
       }
