@@ -2,4 +2,8 @@
     appearance: none;
     border: 0; 
     background-color: transparent;
+
+    @media (min-width: $bkp-desktop) {
+        display: none;
+    }
 }

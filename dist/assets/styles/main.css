@@ -568,6 +568,7 @@ h1, h2 {
 .heading {
   font-family: "Besley", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   margin: 0;
+  color: #000000;
 }
 .heading--display {
   font-size: 3.25rem;
@@ -645,8 +646,18 @@ h1, h2 {
 .menu__item--search {
   display: none;
 }
+@media (min-width: 980px) {
+  .menu__item--search {
+    display: block;
+  }
+}
 .menu__item--account {
   display: none;
+}
+@media (min-width: 980px) {
+  .menu__item--account {
+    display: block;
+  }
 }
 .menu__link {
   color: #444444;
@@ -858,6 +869,11 @@ a:focus .star-rating {
   border: 0;
   background-color: transparent;
 }
+@media (min-width: 980px) {
+  .nav-toggle {
+    display: none;
+  }
+}
 
 .text--lg {
   font-size: 1.125rem;
@@ -993,6 +1009,9 @@ a:focus .star-rating {
   max-width: 1000px;
   position: relative;
   margin: 0 auto;
+}
+.lead .heading {
+  color: #ffffff;
 }
 
 .featurette {
@@ -1545,7 +1564,15 @@ a:focus .star-rating {
     margin-top: 0;
   }
 }
+.newsletter .heading {
+  color: #ffffff;
+}
 
+.header .nav-toggle {
+  flex: 1;
+  margin-right: auto;
+  text-align: left;
+}
 .header__super {
   background-color: #1DB4CA;
   color: #ffffff;
@@ -1565,13 +1592,78 @@ a:focus .star-rating {
   }
 }
 .header__inner {
+  padding: 0.875rem 1.5rem;
+}
+.header__main {
   display: flex;
   align-items: center;
-  padding: 0.875rem 1.5rem;
-  justify-content: space-between;
+  justify-content: center;
 }
+.header__nav {
+  display: none;
+}
+@media (min-width: 980px) {
+  .header__nav {
+    display: block;
+    position: relative;
+    flex: 1;
+    flex-shrink: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.header__logo {
+  flex: 1;
+  flex-shrink: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (min-width: 980px) {
+  .header__logo {
+    margin-right: auto;
+  }
+}
+.header__logo .brand {
+  margin: 0 auto;
+}
+@media (min-width: 980px) {
+  .header__logo .brand {
+    margin: 0;
+  }
+}
+.header__actions {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
 .main-menu {
   display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 980px) {
+  .main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-menu .main-menu__item + .main-menu__item {
+    margin-top: 0;
+    margin-left: 1.5rem;
+  }
+}
+.main-menu__item {
+  text-transform: uppercase;
+  font-weight: 600;
+  flex: 1 0 auto;
+}
+.main-menu__link {
+  color: #000000;
+  text-decoration: none;
 }
 
 .footer {

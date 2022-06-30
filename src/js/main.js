@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var splideOptions = {
         
-            arrows: false,
+            arrows: true,
+            arrowPath: 'M0.7,17.6v4.9H30L16.6,35.9l3.5,3.5L39.4,20L20,0.6l-3.5,3.5L30,17.6H0.7z',
             pagination: false,
             perPage: 3,
             perMove: 1,
@@ -17,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
             breakpoints: {
                 980: {
                     type   : 'loop',
-                    arrows: true,
-                    arrowPath: 'M0.7,17.6v4.9H30L16.6,35.9l3.5,3.5L39.4,20L20,0.6l-3.5,3.5L30,17.6H0.7z',
+                    
+                    
                    perPage: 1
                 }
             }

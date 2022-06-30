@@ -1,5 +1,11 @@
 .header {
 
+    .nav-toggle {
+        flex: 1;
+        margin-right: auto;
+        text-align: left;
+    }
+
     &__super {
         background-color: $color-blue;
         color: $color-white;
@@ -22,17 +28,60 @@
     }
 
     &__inner {
-        display: flex;
-        align-items: center;
+
         padding: ($spacing-unit*1.75) $spacing-lg;
-        justify-content: space-between;
+
     }
 
-   
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__nav {
+        display: none;
+
+        @media (min-width: $bkp-desktop) {
+            display: block;
+            position: relative;
+            flex: 1;
+            flex-shrink: 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+    }
+
+    &__logo {
+
+        flex: 1;
+        flex-shrink: 0;
+        margin: 0 auto;
+        text-align: center;
+
+        @media (min-width: $bkp-desktop) {
+            margin-right: auto;
+        }
+
+        .brand {
+            margin: 0 auto;
+
+            @media (min-width: $bkp-desktop) {
+                margin: 0;
+            }
+        }
+
+    }
+
 
     &__actions {
-
-
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: auto;
     }
 
 }
