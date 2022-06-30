@@ -502,15 +502,25 @@ img {
   max-width: 1200px;
   margin: 0 auto;
 }
+.container--small {
+  max-width: 740px;
+}
 
 .section {
   padding: 6rem 0;
+}
+.section__content {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .section--light-grad {
   background: linear-gradient(180deg, #F0EDE4 0%, #F9F7F3 100%);
 }
 .section--orange {
   background-color: #D2451E;
+  color: #ffffff;
+}
+.section--orange .heading {
   color: #ffffff;
 }
 .section--tight {
@@ -843,6 +853,9 @@ a:focus .star-rating {
 
 .video {
   margin: 0;
+}
+.video--top {
+  margin-top: 3rem;
 }
 .video__wrapper {
   position: relative;
@@ -1978,7 +1991,7 @@ a:focus .star-rating {
   text-align: right !important;
 }
 
-.u-text-center {
+.text-center {
   text-align: center;
 }
 

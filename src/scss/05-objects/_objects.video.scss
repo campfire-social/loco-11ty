@@ -2,6 +2,10 @@
 
     margin: 0;
 
+    &--top {
+        margin-top: $spacing-2xl
+    }
+
     &__wrapper {
         position: relative;
         display: flex;
