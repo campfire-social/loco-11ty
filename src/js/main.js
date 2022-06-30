@@ -1,4 +1,10 @@
 import Splide from '@splidejs/splide';
+import MicroModal from 'micromodal';  
+
+document.addEventListener('DOMContentLoaded', function () {
+    MicroModal.init();
+});
+
 
 document.addEventListener('DOMContentLoaded', function () {
     var elms = document.getElementsByClassName('splide');

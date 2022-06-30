@@ -53,7 +53,7 @@ layout: layouts/base.liquid
         <figure class="video">
           <div class="video__wrapper">
             <img class="video__poster" src="/assets/images/video.jpg" alt="placeholder" style="width: 100%" />
-            <button class="video__play">
+            <button class="video__play" data-micromodal-trigger="modal-1">
               <svg width="39" height="51" viewBox="0 0 39 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0.250122 0V50.23L5.03137 47.0335L33.7189 28.3115L38.5001 25.115L33.7189 21.9185L5.03137 3.19645L0.250122 0Z" />
@@ -62,6 +62,56 @@ layout: layouts/base.liquid
             </button>
           </div>
         </figure>
+      </div>
+    </div>
+  </div>
+  <div id="modal-1" class="modal micromodal-slide" aria-hidden="true">
+
+    <!-- [2] -->
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+
+      <!-- [3] -->
+      <div class="modal__container modal__container--lg" role="dialog" aria-modal="true"
+        aria-labelledby="modal-1-title">
+
+        <header>
+          <h3 class="hidden-visually" id="modal-1-title">
+            Modal Title
+          </h3>
+
+          <!-- [4] -->
+          <button data-micromodal-close class="modal__close btn btn--link">
+            <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+              <path
+                d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z" />
+              </svg>
+            <span class="hidden-visually">Close Modal</span>
+          </button>
+        </header>
+
+        <div class="modal__content" id="modal-1-content">
+          <style>
+            .embed-container {
+              position: relative;
+              padding-bottom: 56.25%;
+              height: 0;
+              overflow: hidden;
+              max-width: 100%;
+            }
+
+            .embed-container iframe,
+            .embed-container object,
+            .embed-container embed {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+          </style>
+          <div class='embed-container'><iframe src='https://www.youtube.com/embed/QILiHiTD3uc' frameborder='0'
+              allowfullscreen></iframe></div>
+        </div>
       </div>
     </div>
   </div>
@@ -94,7 +144,7 @@ layout: layouts/base.liquid
 <section class="products">
   <div class="products__content">
     <div class="container">
-      <div class="u-text-center">
+      <div class="text-center">
         <h2 class="heading heading--two">
           <span class="eyebrow">Popular Products </span>
           Cook Faster. Party Longer
@@ -190,7 +240,7 @@ layout: layouts/base.liquid
 <section class="reviews">
   <div class="reviews__content">
     <div class="container">
-      <div class="u-text-center">
+      <div class="text-center">
         <h2 class="heading heading--two">
           <span class="eyebrow">Customer Reviews </span>
           Sharing the Passion for #LoCoCookers
