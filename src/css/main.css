@@ -817,7 +817,7 @@ ul.grid {
 .star-rating__fill {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16' fill='%23D2451E'%3E %3Cpath fill='%23D2451E' d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z '/%3E %3C/svg%3E"); /* 1 */
   -webkit-print-color-adjust: exact !important;
-  color-adjust: exact !important; /* 2 */
+  print-color-adjust: exact !important; /* 2 */
   left: 0; /* 3 */
   max-width: 100%; /* 4 */
   overflow: hidden; /* 5 */
@@ -2079,5 +2079,3 @@ a:focus .star-rating {
   height: 70%;
   background-color: #F9F7F3;
 }
-
-/*# sourceMappingURL=main.css.map */

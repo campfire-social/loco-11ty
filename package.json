@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "description": "11ty HTML initial development for LoCo site",
   "main": "index.js",
-
   "scripts": {
-    "watch:sass": "sass --watch src/scss:src/css",
-    "build:sass": "sass src/scss:src/css",
+    "watch:sass": "sass  --no-source-map --watch src/scss:src/css",
     "watch:eleventy": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
+    "build:sass": "sass  --no-source-map src/scss:src/css",
     "build:eleventy": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy",
+  
     "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:*"
+    "postbuild": "postcss dist/assets/styles/*.css -u autoprefixer cssnano -r --no-map",
+    "build": "npm-run-all build:sass build:eleventy"    
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/campfire-social/loco-11ty.git"
@@ -37,7 +37,15 @@
   },
   "dependencies": {
     "@splidejs/splide": "^4.0.7",
+    "autoprefixer": "^10.4.7",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.1.12",
     "normalize.css": "^8.0.1",
-    "cross-env": "^7.0.3"
-  }
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "not IE 11"
+  ]
 }
