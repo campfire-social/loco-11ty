@@ -27,6 +27,7 @@
     }
 
     &__text {
+        padding: $spacing-lg;
         align-items: center;
         justify-content: center;
         color: $color-white;

@@ -1,0 +1,38 @@
+.header {
+
+    &__super {
+        background-color: $color-blue;
+        color: $color-white;
+        padding: ($spacing-unit*1.75) $spacing-lg;
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: $color-white;
+            display: none;
+
+            @media (min-width: $bkp-desktop) {
+                display: inline-block;
+            }
+
+        }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        padding: ($spacing-unit*1.75) $spacing-lg;
+        justify-content: space-between;
+    }
+
+   
+
+    &__actions {
+
+
+    }
+
+}

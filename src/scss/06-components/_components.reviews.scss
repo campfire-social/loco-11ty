@@ -1,0 +1,9 @@
+.reviews {
+    padding-top: $spacing-2xl; 
+    padding-bottom: $spacing-2xl;
+
+    &__content {
+        padding-left: $spacing-lg;
+        padding-right: $spacing-lg;
+    }
+} 

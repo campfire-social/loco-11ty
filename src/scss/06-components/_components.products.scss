@@ -1,8 +1,6 @@
 .products {
     padding-top: $spacing-2xl; 
     padding-bottom: $spacing-2xl; 
-    padding-left: $spacing-lg;
-    padding-right: $spacing-lg;
 
     background: linear-gradient(180deg, #F0EDE4 0%, #F9F7F3 100%); 
 
@@ -10,6 +8,11 @@
     
         padding-bottom: 0; 
     
+    }
+
+    &__content {
+        padding-left: $spacing-lg;
+    padding-right: $spacing-lg;
     }
 
 

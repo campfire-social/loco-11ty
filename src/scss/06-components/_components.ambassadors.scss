@@ -1,0 +1,16 @@
+.ambassadors {
+
+    &__content {
+        padding-left: $spacing-lg;
+        padding-right: $spacing-lg;
+    }
+
+    &__text {
+
+        .btn + .btn {
+            margin-top: $spacing-lg;
+        }
+
+    }
+
+}

@@ -19,26 +19,48 @@
         }
 
         &--1of2 {
-           
-            max-width: 50%;
+
+            @media (min-width: $bkp-desktop) {
+                max-width: 50%;
             flex-basis: 50%;
+            }
+           
+            
         }
         
 
         &--1of3 {
-            max-width: 33.333%;
+            
+
+            @media (min-width: $bkp-desktop) {
+                max-width: 33.333%;
             flex-basis: 33.333%;
+            }
         }
 
         &--2of3 {
-            max-width: 66.6666%;
+            
+
+            @media (min-width: $bkp-desktop) {
+                max-width: 66.6666%;
             flex-basis: 66.6666%;
+            }
         }
         
     }
 
-    &__item + &__item > .card {
-        border-left-width: 1px;
+    &__item + &__item {
+
+        margin-top: $spacing-lg;
+
+        @media (min-width: $bkp-desktop) {
+            margin-top: 0; 
+        }
+
+        > .card {
+            border-left-width: 1px;
+        }
+
     }
 
 }

@@ -3,7 +3,12 @@
     font-size: 1.125rem;
     
     &--lg {
-        font-size: 2rem; 
+
+        font-size: 1.75rem;
+
+        @media (min-width: $bkp-desktop) {
+            font-size: 2rem; 
+        }
     }
 
     &--sm {

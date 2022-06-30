@@ -18,7 +18,7 @@ layout: layouts/base.liquid
           The SmartTemp Griddle
         </h1>
         <p class="subheading subheading--lg">Featuring thermostat temperature control with digital display</p>
-        <a class="btn btn--primary" href="#"><span>Show Now</span></a>
+        <a class="btn btn--primary" href="#"><span>Shop Now</span></a>
       </div>
     </div>
   </div>
@@ -37,7 +37,9 @@ layout: layouts/base.liquid
             <span class="eyebrow">Featured Product</span>
             Hey Neighbor, Whatcha' Griddlin?
           </h2>
-          <p>Introducing Griddles from LoCo. Your new favorite way to cook. Featuring our SmartTemp technology, making
+          <div class="groove groove--blue"></div>
+          <p class="text text--lg">Introducing Griddles from LoCo. Your new favorite way to cook. Featuring our
+            SmartTemp technology, making
             it
             easy to dial in your desired cooking temperature in 25 degree increments and accurately maintain those
             precise
@@ -53,8 +55,9 @@ layout: layouts/base.liquid
             <img class="video__poster" src="/assets/images/video.jpg" alt="placeholder" style="width: 100%" />
             <button class="video__play">
               <svg width="39" height="51" viewBox="0 0 39 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.250122 0V50.23L5.03137 47.0335L33.7189 28.3115L38.5001 25.115L33.7189 21.9185L5.03137 3.19645L0.250122 0Z"/>
-            </svg>
+                <path
+                  d="M0.250122 0V50.23L5.03137 47.0335L33.7189 28.3115L38.5001 25.115L33.7189 21.9185L5.03137 3.19645L0.250122 0Z" />
+              </svg>
               <span class="hidden-visually">Play Video</span>
             </button>
           </div>
@@ -89,7 +92,7 @@ layout: layouts/base.liquid
 
 {% comment %} Featured Product Section : BEGIN {% endcomment %}
 <section class="products">
-  <div>
+  <div class="products__content">
     <div class="container">
       <div class="u-text-center">
         <h2 class="heading heading--two">
@@ -184,14 +187,15 @@ layout: layouts/base.liquid
 {% comment %} Full Width Banner w/ Image Background : END {% endcomment %}
 
 {% comment %} Reviews Section : BEGIN {% endcomment %}
-<section class="section">
-  <div>
+<section class="reviews">
+  <div class="reviews__content">
     <div class="container">
       <div class="u-text-center">
         <h2 class="heading heading--two">
           <span class="eyebrow">Customer Reviews </span>
           Sharing the Passion for #LoCoCookers
         </h2>
+        <div class="groove"></div>
       </div>
       <div class="splide is-initialized is-active">
         <div class="splide__track">
@@ -270,88 +274,94 @@ layout: layouts/base.liquid
 {% comment %} Brand Ambassador Section : BEGIN {% endcomment %}
 <section class="ambassadors">
   <div class="ambassadors__bg"></div>
-  <div class="container">
-    <div class="prose prose--center">
-      <h2 class="heading heading--two">
-        <span class="eyebrow">Brand Ambassadors </span>
-        Pull Up a Chair and Go #LoCo with Us
-      </h2>
-    </div>
-    <div class="groove groove--blue groove--contained"></div>
-    <div>
-      <ul class="grid">
-        <li class="grid__item">
-          <article class="card">
-            <div class="card__header">
-               <figure class="flexEmbed">
-              <div class="flexEmbed__ratio flexEmbed__ratio--square"></div>
-                <img class="flexEmbed__content" src="/assets/images/pitman.jpg" alt="Placeholder">
-              </figure>
-            </div>
-            <div class="card__body">
-              <div class="card__title">
-                <h3 class="heading heading--three">Matt Pittman</h3>
-              </div>
-              <div class="card__copy">
-                <p class="subheading subheading--orange">Founder of Meat Church BBQ</p>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="grid__item">
-          <article class="card">
-            <div class="card__header">
-               <figure class="flexEmbed">
-              <div class="flexEmbed__ratio flexEmbed__ratio--square"></div>
-                <img class="flexEmbed__content" src="/assets/images/cason.jpg" alt="Placeholder">
-              </figure>
-            </div>
-            <div class="card__body">
-              <div class="card__title">
-                <h3 class="heading heading--three">Big Moe Cason</h3>
-              </div>
-              <div class="card__copy">
-                <p class="subheading subheading--orange">Pitmaster</p>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="grid__item">
-          <article class="card">
-            <div class="card__header">
-              <figure class="flexEmbed">
-              <div class="flexEmbed__ratio flexEmbed__ratio--square"></div>
-                <img class="flexEmbed__content" src="/assets/images/bourgeois.jpg" alt="Placeholder">
-              </figure>
-            </div>
-            <div class="card__body">
-              <div class="card__title">
-                <h3 class="heading heading--three">Chef Jean-Paul Bourgeois</h3>
-              </div>
-              <div class="card__copy">
-                <p class="subheading subheading--orange">Chef</p>
-              </div>
-            </div>
-          </article>
-        </li>
-      </ul>
-    </div>
-  
-  
-    <div class="grid">
-      <div class="grid__item grid__item--1of2">
-        <p>Our goal is for your platform to share LoCo with anyone and everyone, inviting them to take a seat at your
-          table! Whether it's grandparents, aunts, uncles, neighbors or friends, we believe you have the chance to
-          create community through our LoCo products.</p>
+  <div class="ambassadors__content">
+    <div class="container">
+      <div class="prose prose--center">
+        <h2 class="heading heading--two">
+          <span class="eyebrow">Brand Ambassadors </span>
+          Pull Up a Chair and Go #LoCo with Us
+        </h2>
       </div>
-      <div class="grid__item grid__item--1of2">
-      <div style="text-align: right;">
-        <a class="btn btn--primary" href="#">
-          <span>View Brand Ambassadors</span>
-        </a>
-        <a class="btn btn--secondary" href="#">
-          <span>Become a Brand Ambassador</span>
-        </a>
+      <div class="groove groove--blue groove--contained"></div>
+      <div>
+        <ul class="grid">
+          <li class="grid__item">
+            <article class="card">
+              <div class="card__header">
+                <figure class="flexEmbed">
+                  <div class="flexEmbed__ratio flexEmbed__ratio--square"></div>
+                  <img class="flexEmbed__content" src="/assets/images/pitman.jpg" alt="Placeholder">
+                </figure>
+              </div>
+              <div class="card__body">
+                <div class="card__title">
+                  <h3 class="heading heading--three">Matt Pittman</h3>
+                </div>
+                <div class="card__copy">
+                  <p class="subheading subheading--orange">Founder of Meat Church BBQ</p>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="grid__item">
+            <article class="card">
+              <div class="card__header">
+                <figure class="flexEmbed">
+                  <div class="flexEmbed__ratio flexEmbed__ratio--square"></div>
+                  <img class="flexEmbed__content" src="/assets/images/cason.jpg" alt="Placeholder">
+                </figure>
+              </div>
+              <div class="card__body">
+                <div class="card__title">
+                  <h3 class="heading heading--three">Big Moe Cason</h3>
+                </div>
+                <div class="card__copy">
+                  <p class="subheading subheading--orange">Pitmaster</p>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="grid__item">
+            <article class="card">
+              <div class="card__header">
+                <figure class="flexEmbed">
+                  <div class="flexEmbed__ratio flexEmbed__ratio--square"></div>
+                  <img class="flexEmbed__content" src="/assets/images/bourgeois.jpg" alt="Placeholder">
+                </figure>
+              </div>
+              <div class="card__body">
+                <div class="card__title">
+                  <h3 class="heading heading--three">Chef Jean-Paul Bourgeois</h3>
+                </div>
+                <div class="card__copy">
+                  <p class="subheading subheading--orange">Chef</p>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ambassadors__text">
+        <div class="grid">
+          <div class="grid__item grid__item--1of2">
+            <div class="text text--lg">
+              <p>Our goal is for your platform to share LoCo with anyone and everyone, inviting them to take a seat at
+                your
+                table! Whether it's grandparents, aunts, uncles, neighbors or friends, we believe you have the chance to
+                create community through our LoCo products.</p>
+            </div>
+          </div>
+          <div class="grid__item grid__item--1of2">
+            <div style="text-align: right;">
+              <a class="btn btn--primary" href="#">
+                <span>View Brand Ambassadors</span>
+              </a>
+              <a class="btn btn--secondary" href="#">
+                <span>Become a Brand Ambassador</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

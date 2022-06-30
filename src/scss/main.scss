@@ -48,6 +48,9 @@
 @import '05-objects/objects.star-rating';
 @import '05-objects/objects.review';
 @import '05-objects/objects.video';
+@import '05-objects/objects.brand';
+@import '05-objects/objects.nav-toggle';
+@import '05-objects/objects.text';
 
 // 06. Components 
 @import '06-components/components.button';
@@ -56,8 +59,12 @@
 @import '06-components/components.card';
 @import '06-components/components.splide';
 @import '06-components/components.newsletter';
+@import '06-components/components.header';
+@import '06-components/components.main-menu';
 @import '06-components/components.footer';
 @import '06-components/components.products';
+@import '06-components/components.reviews';
+@import '06-components/components.ambassadors';
 
 // 99. Utilities
 @import '99-utilities/utilities.clearfix';
