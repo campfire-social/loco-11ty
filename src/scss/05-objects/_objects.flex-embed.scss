@@ -29,6 +29,14 @@
             }
         }
 
+        &--header {
+            padding-bottom: 40vh;
+
+            @media (min-width: $bkp-wide) {
+                padding-bottom: 32%;
+            }
+        }
+
         &--square {
             padding-bottom: 100%;
         }

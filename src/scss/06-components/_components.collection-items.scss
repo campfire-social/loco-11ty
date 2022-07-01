@@ -1,5 +1,66 @@
 .collection {
 
+    &-featured {
+        @media (min-width: $bkp-tablet) {
+            display: flex;
+        }
+    }
+
+    &-menu {
+
+        $c: &;
+
+        padding: 0; 
+        list-style: none;
+        display: flex;
+        overflow: auto;
+        max-width: 1760px;
+        padding: $spacing-lg 0;
+        margin: 0 auto $spacing-2xl;
+        list-style: none;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        @media (min-width: $bkp-desktop) {
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        &__item {
+            margin-bottom: $spacing-unit;
+            margin-left: $spacing-lg;
+            margin-right: $spacing-lg;
+            text-align: center;
+            flex-basis: content;
+            white-space: nowrap;
+        }
+
+        &__link {
+
+            @include text-opacity($color-black, .6);            
+            font-family: $font-display;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            border-radius: 100px;
+            padding: .5rem 1rem;
+            background-color: transparent;
+            font-size: .875rem;
+
+            &:hover, &:focus, &.is-active {
+                
+                background-color: $color-black;
+                color: $color-white;
+                
+            }
+
+        }
+
+    }
+
+
 
     &-items {
         list-style: none;

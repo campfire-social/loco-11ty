@@ -3,3 +3,7 @@
     background: rgba($color, $opacity);
 }
 
+@mixin text-opacity($color, $opacity: 0.3) { /* The Fallback */
+    color: rgba($color, $opacity);
+}
+

@@ -554,6 +554,14 @@ img {
     padding-bottom: 38%;
   }
 }
+.flexEmbed__ratio--header {
+  padding-bottom: 40vh;
+}
+@media (min-width: 72em) {
+  .flexEmbed__ratio--header {
+    padding-bottom: 32%;
+  }
+}
 .flexEmbed__ratio--square {
   padding-bottom: 100%;
 }
@@ -1152,6 +1160,33 @@ a:focus .star-rating {
   flex-direction: column;
   width: 100%;
   margin: 0;
+}
+.card--bg {
+  border: 0;
+  position: relative;
+  padding-bottom: 18%;
+  min-height: 420px;
+}
+.card--bg .card__content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+}
+.card--bg .card__hero {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  flex: 0 0 auto;
+  overflow: hidden;
+  z-index: 1;
+}
+.card--bg .card__hero-object {
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  width: 100%;
 }
 .card--filled {
   background: #F7F7F7;
@@ -2139,6 +2174,54 @@ a:focus .star-rating {
   will-change: transform;
 }
 
+@media (min-width: 768px) {
+  .collection-featured {
+    display: flex;
+  }
+}
+.collection-menu {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  overflow: auto;
+  max-width: 1760px;
+  padding: 1.5rem 0;
+  margin: 0 auto 3rem;
+  list-style: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@media (min-width: 980px) {
+  .collection-menu {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.collection-menu__item {
+  margin-bottom: 0.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+  flex-basis: content;
+  white-space: nowrap;
+}
+.collection-menu__link {
+  /* The Fallback */
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Besley", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  font-size: 0.875rem;
+}
+.collection-menu__link:hover, .collection-menu__link:focus, .collection-menu__link.is-active {
+  background-color: #000000;
+  color: #ffffff;
+}
 .collection-items {
   list-style: none;
   display: grid;
