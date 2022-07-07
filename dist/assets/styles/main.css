@@ -2191,6 +2191,9 @@ a:focus .star-rating {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+.collection-menu::-webkit-scrollbar {
+  display: none;
+}
 @media (min-width: 980px) {
   .collection-menu {
     justify-content: center;
